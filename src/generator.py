@@ -1,8 +1,6 @@
 import os
 from pathlib import Path
-import logging
 from typing import Optional, TextIO
-import mimetypes
 from .config import FilterConfig, FormatConfig
 from .formatter import ContentFormatter
 from .utils import setup_logging, is_text_file

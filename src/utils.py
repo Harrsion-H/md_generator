@@ -1,7 +1,6 @@
 import mimetypes
 import logging
 from pathlib import Path
-from typing import Optional
 
 def setup_logging(name: str, level: int = logging.INFO) -> logging.Logger:
     """配置日志记录器"""

@@ -121,8 +121,6 @@ class ContentFormatter:
     def format_csv(self, content: str, file_path: Path) -> str:
         """CSV格式化"""
         try:
-            result = []
-            print(content)
             reader = csv.reader(io.StringIO(content))
             formatted_content = "\n".join([",".join(row) for row in reader])
             return f"```csv\n{formatted_content}\n```"
